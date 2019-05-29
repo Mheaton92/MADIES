@@ -12,7 +12,7 @@ esac done
 
 # DEFAULTS:
 [ -z "$dotfilesrepo" ] && dotfilesrepo="https://github.com/Mheaton92/DE"
-[ -z "$progsfile" ] && progsfile="https://raw.githubusercontent.com/Mheaton92/DE/master/repos/vprogs.csv"
+[ -z "$progsfile" ] && progsfile="https://raw.githubusercontent.com/Mheaton92/MADIES/master/vprogs.csv"
 [ -z "$aurhelper" ] && aurhelper="yay"
 
 ### FUNCTIONS ###
