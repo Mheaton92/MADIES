@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# Written orignally by Luke Smith.
+
 ### OPTIONS AND VARIABLES ###
 
 while getopts ":a:r:p:h" o; do case "${o}" in
@@ -140,7 +142,7 @@ resetpulse() { dialog --infobox "Reseting Pulseaudio..." 4 50
 
 finalize(){ \
 	dialog --infobox "Preparing welcome message..." 4 50
-	echo "exec_always --no-startup-id notify-send -i ~/.scripts/larbs.png 'Welcome to MADEIS:' 'Press Super+F1 for the manual.' -t 10000"  >> "/home/$name/.config/i3/config"
+	echo "exec_always --no-startup-id notify-send 'Welcome to MADEIS:' -t 10000"
 	dialog --title "All done!" --msgbox "Congrats! Provided there were no hidden errors, the script completed successfully and all the programs and configuration files should be in place.\\n\\nTo run the new graphical environment, log out and log back in as your new user, then run the command \"startx\" to start the graphical environment (it will start automatically in tty1).\\n\\n.t Matt" 12 80
 	}
 
