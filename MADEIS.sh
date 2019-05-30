@@ -1,6 +1,7 @@
 #!/bin/sh
 
-# Written orignally by Luke Smith.
+
+# Written originally by Luke Smith.
 
 ### OPTIONS AND VARIABLES ###
 
